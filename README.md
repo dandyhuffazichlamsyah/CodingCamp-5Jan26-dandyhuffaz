@@ -126,7 +126,7 @@ This is a **To-Do List Web Application** built as part of the CodingCamp Softwar
 
 ## 🌐 Live Demo
 
-🔗 **[View Live Demo]([https://dandyhi.me/To-Do-List-Web-Application/](https://dandyhi.me/CodingCamp-5Jan26-dandyhuffaz/))**
+🔗 **[View Live Demo](https://dandyhi.me/CodingCamp-5Jan26-dandyhuffaz/)**
 
 ---
 
