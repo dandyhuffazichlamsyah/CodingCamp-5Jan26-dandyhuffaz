@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple and elegant To-Do List application to manage your daily tasks">
+    <title>Todo List | Task Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="todo-card">
+            <h1 class="todo-title">Todo List</h1>
+            <p class="author-name">by Dandy Huffaz</p>
+
+            <form id="todoForm" class="todo-form">
+                <div class="input-group">
+                    <input type="text" id="todoInput" class="todo-input" placeholder="Add a todo ..."
+                        autocomplete="off">
+                    <input type="date" id="dateInput" class="date-input">
+                    <button type="submit" class="add-btn" id="addBtn" aria-label="Add task">
+                        <span class="plus-icon">+</span>
+                    </button>
+                </div>
+                <p class="error-message" id="errorMessage"></p>
+            </form>
+
+            <div class="controls">
+                <div class="filter-container">
+                    <select id="filterSelect" class="filter-select">
+                        <option value="all">FILTER</option>
+                        <option value="all">All Tasks</option>
+                        <option value="pending">Pending</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <button class="delete-all-btn" id="deleteAllBtn">DELETE ALL</button>
+            </div>
+
+            <div class="todo-table-container">
+                <table class="todo-table">
+                    <thead>
+                        <tr>
+                            <th>TASK</th>
+                            <th>DUE DATE</th>
+                            <th>STATUS</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="todoList">
+                    </tbody>
+                </table>
+                <div class="empty-state" id="emptyState">
+                    <p>No task found</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
